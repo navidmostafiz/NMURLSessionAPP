@@ -13,21 +13,26 @@ class PostViewController: UIViewController {
     @IBOutlet weak var userIDTF: UITextField!
     @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var bodyTF: UITextField!
-    @IBOutlet weak var responseBodyTA: UITextView!
-    @IBOutlet weak var responseHeaderTA: UITextView!
+
     @IBOutlet weak var requestHeadersTA: UITextView!
+    @IBOutlet weak var responseHeaderTA: UITextView!
+    @IBOutlet weak var responseBodyTA: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func postButtonClicked(_ sender: Any) {
+    @IBAction func closePostButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func postButtonClicked(_ sender: UIButton) {
         guard let userID = userIDTF.text else { return }
-        guard let title = titleTF.text else { return }
-        guard let body = bodyTF.text else { return }
-        
-        callPostAPICall(userID:userID, title:title, body:body)
+             guard let title = titleTF.text else { return }
+             guard let body = bodyTF.text else { return }
+             print("post button clicked!")
+             callPostAPICall(userID:userID, title:title, body:body)
     }
     
 }
