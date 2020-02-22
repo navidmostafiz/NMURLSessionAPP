@@ -13,6 +13,7 @@
 		6D2E94FF240178230016F09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2E94FD240178230016F09D /* Main.storyboard */; };
 		6D2E9501240178250016F09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2E9500240178250016F09D /* Assets.xcassets */; };
 		6D2E9504240178250016F09D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2E9502240178250016F09D /* LaunchScreen.storyboard */; };
+		6D2E950C240191A80016F09D /* PostVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E950B240191A80016F09D /* PostVewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6D2E9500240178250016F09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D2E9503240178250016F09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D2E9505240178250016F09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2E950B240191A80016F09D /* PostVewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				6D2E94F7240178230016F09D /* AppDelegate.swift */,
 				6D2E94F9240178230016F09D /* SceneDelegate.swift */,
+				6D2E950B240191A80016F09D /* PostVewController.swift */,
 				6D2E94FB240178230016F09D /* ViewController.swift */,
 				6D2E94FD240178230016F09D /* Main.storyboard */,
 				6D2E9500240178250016F09D /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				6D2E94FC240178230016F09D /* ViewController.swift in Sources */,
 				6D2E94F8240178230016F09D /* AppDelegate.swift in Sources */,
+				6D2E950C240191A80016F09D /* PostVewController.swift in Sources */,
 				6D2E94FA240178230016F09D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

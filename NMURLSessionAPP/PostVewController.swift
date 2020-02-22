@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PostViewController: UIViewController {
 
     @IBOutlet weak var userIDTF: UITextField!
     @IBOutlet weak var titleTF: UITextField!
@@ -33,8 +33,9 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController {
-    func callPostAPICall(userID:String, title:String, body:String){
+extension PostViewController {
+    
+    private func callPostAPICall(userID:String, title:String, body:String){
         if let apiURL = URL(string: "https://jsonplaceholder.typicode.com/posts/") {
             var request = URLRequest(url: apiURL)
             request.httpMethod = "POST"
@@ -56,7 +57,7 @@ extension ViewController {
                     return
                 }
                 
-                if let response = httpresponse as? HTTPURLResponse {
+                if (httpresponse as? HTTPURLResponse) != nil {
 //                    DispatchQueue.main.sync {
 //                        self.responseHeaderTA.text = String(response.statusCode)
 //                    }
@@ -69,7 +70,7 @@ extension ViewController {
 
                         for (key, value) in jsonData {
                             if key != "id" {
-                                self.responseBodyTA.text = key as? String
+                                self.responseBodyTA.text = key as String
                             }
                         }
                         
